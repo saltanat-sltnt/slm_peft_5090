@@ -1,0 +1,2067 @@
+{
+  "step_samples": [
+    {
+      "power_w": 265.12,
+      "vram_used_mb": 8388.6875,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572307.0719094,
+      "global_step": 10,
+      "source": "training_step"
+    },
+    {
+      "power_w": 325.959,
+      "vram_used_mb": 8389.3125,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572307.9052677,
+      "global_step": 20,
+      "source": "training_step"
+    },
+    {
+      "power_w": 328.439,
+      "vram_used_mb": 8389.3125,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572308.7053726,
+      "global_step": 30,
+      "source": "training_step"
+    },
+    {
+      "power_w": 338.847,
+      "vram_used_mb": 10055.3125,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572309.5550826,
+      "global_step": 40,
+      "source": "training_step"
+    },
+    {
+      "power_w": 363.564,
+      "vram_used_mb": 10055.3125,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572310.4151564,
+      "global_step": 50,
+      "source": "training_step"
+    },
+    {
+      "power_w": 243.818,
+      "vram_used_mb": 10053.625,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572312.9144342,
+      "global_step": 60,
+      "source": "training_step"
+    },
+    {
+      "power_w": 330.104,
+      "vram_used_mb": 10053.625,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572313.7178614,
+      "global_step": 70,
+      "source": "training_step"
+    },
+    {
+      "power_w": 336.678,
+      "vram_used_mb": 10053.625,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572314.5478373,
+      "global_step": 80,
+      "source": "training_step"
+    },
+    {
+      "power_w": 361.337,
+      "vram_used_mb": 10053.625,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572315.3874388,
+      "global_step": 90,
+      "source": "training_step"
+    },
+    {
+      "power_w": 350.956,
+      "vram_used_mb": 10051.625,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572316.1883612,
+      "global_step": 100,
+      "source": "training_step"
+    },
+    {
+      "power_w": 206.178,
+      "vram_used_mb": 10050.625,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572318.6215668,
+      "global_step": 110,
+      "source": "training_step"
+    },
+    {
+      "power_w": 348.972,
+      "vram_used_mb": 10050.625,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572319.471634,
+      "global_step": 120,
+      "source": "training_step"
+    },
+    {
+      "power_w": 357.985,
+      "vram_used_mb": 10050.625,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572320.2716143,
+      "global_step": 130,
+      "source": "training_step"
+    },
+    {
+      "power_w": 350.182,
+      "vram_used_mb": 10050.625,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572321.1055946,
+      "global_step": 140,
+      "source": "training_step"
+    },
+    {
+      "power_w": 349.577,
+      "vram_used_mb": 10050.625,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572321.9224088,
+      "global_step": 150,
+      "source": "training_step"
+    },
+    {
+      "power_w": 265.429,
+      "vram_used_mb": 10050.625,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572324.3708882,
+      "global_step": 160,
+      "source": "training_step"
+    },
+    {
+      "power_w": 344.78,
+      "vram_used_mb": 10050.625,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572325.204254,
+      "global_step": 170,
+      "source": "training_step"
+    },
+    {
+      "power_w": 345.425,
+      "vram_used_mb": 10050.625,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572326.047829,
+      "global_step": 180,
+      "source": "training_step"
+    },
+    {
+      "power_w": 353.673,
+      "vram_used_mb": 10050.625,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572326.9084601,
+      "global_step": 190,
+      "source": "training_step"
+    },
+    {
+      "power_w": 364.304,
+      "vram_used_mb": 10050.625,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572327.7544339,
+      "global_step": 200,
+      "source": "training_step"
+    },
+    {
+      "power_w": 205.663,
+      "vram_used_mb": 10050.625,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572330.1889973,
+      "global_step": 210,
+      "source": "training_step"
+    },
+    {
+      "power_w": 342.337,
+      "vram_used_mb": 10050.625,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572331.0143237,
+      "global_step": 220,
+      "source": "training_step"
+    },
+    {
+      "power_w": 358.714,
+      "vram_used_mb": 10050.625,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572331.8451793,
+      "global_step": 230,
+      "source": "training_step"
+    },
+    {
+      "power_w": 352.735,
+      "vram_used_mb": 10050.625,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572332.6548667,
+      "global_step": 240,
+      "source": "training_step"
+    },
+    {
+      "power_w": 351.528,
+      "vram_used_mb": 10050.625,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572333.4722404,
+      "global_step": 250,
+      "source": "training_step"
+    },
+    {
+      "power_w": 254.475,
+      "vram_used_mb": 11826.625,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572336.000435,
+      "global_step": 260,
+      "source": "training_step"
+    },
+    {
+      "power_w": 365.686,
+      "vram_used_mb": 11826.625,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572336.8045127,
+      "global_step": 270,
+      "source": "training_step"
+    },
+    {
+      "power_w": 340.765,
+      "vram_used_mb": 11826.625,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572337.6353629,
+      "global_step": 280,
+      "source": "training_step"
+    },
+    {
+      "power_w": 353.755,
+      "vram_used_mb": 11826.625,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572338.4551148,
+      "global_step": 290,
+      "source": "training_step"
+    },
+    {
+      "power_w": 348.482,
+      "vram_used_mb": 11826.625,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572339.2876756,
+      "global_step": 300,
+      "source": "training_step"
+    },
+    {
+      "power_w": 220.675,
+      "vram_used_mb": 11826.625,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572341.7507555,
+      "global_step": 310,
+      "source": "training_step"
+    },
+    {
+      "power_w": 354.207,
+      "vram_used_mb": 11826.625,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572342.6158986,
+      "global_step": 320,
+      "source": "training_step"
+    },
+    {
+      "power_w": 348.531,
+      "vram_used_mb": 11826.625,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572343.4180222,
+      "global_step": 330,
+      "source": "training_step"
+    },
+    {
+      "power_w": 340.775,
+      "vram_used_mb": 11826.625,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572344.2331827,
+      "global_step": 340,
+      "source": "training_step"
+    },
+    {
+      "power_w": 338.611,
+      "vram_used_mb": 11826.625,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572345.0517507,
+      "global_step": 350,
+      "source": "training_step"
+    },
+    {
+      "power_w": 215.807,
+      "vram_used_mb": 11826.625,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572347.499629,
+      "global_step": 360,
+      "source": "training_step"
+    },
+    {
+      "power_w": 363.081,
+      "vram_used_mb": 11826.625,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572348.3621433,
+      "global_step": 370,
+      "source": "training_step"
+    },
+    {
+      "power_w": 363.558,
+      "vram_used_mb": 11826.625,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572349.16911,
+      "global_step": 380,
+      "source": "training_step"
+    },
+    {
+      "power_w": 352.117,
+      "vram_used_mb": 11828.3125,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572349.9885826,
+      "global_step": 390,
+      "source": "training_step"
+    },
+    {
+      "power_w": 355.81,
+      "vram_used_mb": 11826.3125,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572350.8320558,
+      "global_step": 400,
+      "source": "training_step"
+    },
+    {
+      "power_w": 213.664,
+      "vram_used_mb": 11826.3125,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572353.301019,
+      "global_step": 410,
+      "source": "training_step"
+    },
+    {
+      "power_w": 359.864,
+      "vram_used_mb": 11826.3125,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572354.1824343,
+      "global_step": 420,
+      "source": "training_step"
+    },
+    {
+      "power_w": 381.933,
+      "vram_used_mb": 11826.3125,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572355.0343602,
+      "global_step": 430,
+      "source": "training_step"
+    },
+    {
+      "power_w": 355.304,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572355.8551447,
+      "global_step": 440,
+      "source": "training_step"
+    },
+    {
+      "power_w": 348.397,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572356.6843405,
+      "global_step": 450,
+      "source": "training_step"
+    },
+    {
+      "power_w": 221.153,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572359.1501915,
+      "global_step": 460,
+      "source": "training_step"
+    },
+    {
+      "power_w": 356.139,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572359.965499,
+      "global_step": 470,
+      "source": "training_step"
+    },
+    {
+      "power_w": 357.861,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572360.800772,
+      "global_step": 480,
+      "source": "training_step"
+    },
+    {
+      "power_w": 339.249,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572361.616821,
+      "global_step": 490,
+      "source": "training_step"
+    },
+    {
+      "power_w": 356.703,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572362.4494016,
+      "global_step": 500,
+      "source": "training_step"
+    },
+    {
+      "power_w": 293.119,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572364.916902,
+      "global_step": 510,
+      "source": "training_step"
+    },
+    {
+      "power_w": 347.005,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572365.7285335,
+      "global_step": 520,
+      "source": "training_step"
+    },
+    {
+      "power_w": 350.364,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572366.5489168,
+      "global_step": 530,
+      "source": "training_step"
+    },
+    {
+      "power_w": 346.633,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572367.3558784,
+      "global_step": 540,
+      "source": "training_step"
+    },
+    {
+      "power_w": 345.819,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572368.184532,
+      "global_step": 550,
+      "source": "training_step"
+    },
+    {
+      "power_w": 223.89,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572370.6605392,
+      "global_step": 560,
+      "source": "training_step"
+    },
+    {
+      "power_w": 357.671,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572371.4928005,
+      "global_step": 570,
+      "source": "training_step"
+    },
+    {
+      "power_w": 359.939,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572372.3043642,
+      "global_step": 580,
+      "source": "training_step"
+    },
+    {
+      "power_w": 345.303,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572373.1004171,
+      "global_step": 590,
+      "source": "training_step"
+    },
+    {
+      "power_w": 352.019,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572373.933106,
+      "global_step": 600,
+      "source": "training_step"
+    },
+    {
+      "power_w": 286.213,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572376.3695354,
+      "global_step": 610,
+      "source": "training_step"
+    },
+    {
+      "power_w": 350.34,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572377.2025015,
+      "global_step": 620,
+      "source": "training_step"
+    },
+    {
+      "power_w": 350.424,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572378.0343816,
+      "global_step": 630,
+      "source": "training_step"
+    },
+    {
+      "power_w": 349.552,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572378.8517556,
+      "global_step": 640,
+      "source": "training_step"
+    },
+    {
+      "power_w": 358.153,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572379.667808,
+      "global_step": 650,
+      "source": "training_step"
+    },
+    {
+      "power_w": 243.935,
+      "vram_used_mb": 11832.5,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572382.1168494,
+      "global_step": 660,
+      "source": "training_step"
+    },
+    {
+      "power_w": 354.932,
+      "vram_used_mb": 11830.8125,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572382.9348521,
+      "global_step": 670,
+      "source": "training_step"
+    },
+    {
+      "power_w": 354.735,
+      "vram_used_mb": 11830.8125,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572383.7508497,
+      "global_step": 680,
+      "source": "training_step"
+    },
+    {
+      "power_w": 354.791,
+      "vram_used_mb": 11830.8125,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572384.5841143,
+      "global_step": 690,
+      "source": "training_step"
+    },
+    {
+      "power_w": 349.28,
+      "vram_used_mb": 11830.8125,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572385.385819,
+      "global_step": 700,
+      "source": "training_step"
+    },
+    {
+      "power_w": 296.087,
+      "vram_used_mb": 11829.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572387.854549,
+      "global_step": 710,
+      "source": "training_step"
+    },
+    {
+      "power_w": 338.615,
+      "vram_used_mb": 11829.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572388.667975,
+      "global_step": 720,
+      "source": "training_step"
+    },
+    {
+      "power_w": 347.704,
+      "vram_used_mb": 11829.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572389.4687557,
+      "global_step": 730,
+      "source": "training_step"
+    },
+    {
+      "power_w": 361.608,
+      "vram_used_mb": 11829.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572390.2883043,
+      "global_step": 740,
+      "source": "training_step"
+    },
+    {
+      "power_w": 352.331,
+      "vram_used_mb": 11829.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572391.0856404,
+      "global_step": 750,
+      "source": "training_step"
+    },
+    {
+      "power_w": 244.437,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572393.552621,
+      "global_step": 760,
+      "source": "training_step"
+    },
+    {
+      "power_w": 337.953,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572394.3514788,
+      "global_step": 770,
+      "source": "training_step"
+    },
+    {
+      "power_w": 354.847,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572395.1673625,
+      "global_step": 780,
+      "source": "training_step"
+    },
+    {
+      "power_w": 363.837,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572395.9856598,
+      "global_step": 790,
+      "source": "training_step"
+    },
+    {
+      "power_w": 346.522,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572396.8004808,
+      "global_step": 800,
+      "source": "training_step"
+    },
+    {
+      "power_w": 284.64,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572399.4169338,
+      "global_step": 810,
+      "source": "training_step"
+    },
+    {
+      "power_w": 341.147,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572400.2340565,
+      "global_step": 820,
+      "source": "training_step"
+    },
+    {
+      "power_w": 363.075,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572401.0360003,
+      "global_step": 830,
+      "source": "training_step"
+    },
+    {
+      "power_w": 357.055,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572401.8710253,
+      "global_step": 840,
+      "source": "training_step"
+    },
+    {
+      "power_w": 364.186,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572402.70095,
+      "global_step": 850,
+      "source": "training_step"
+    },
+    {
+      "power_w": 190.037,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572405.3336806,
+      "global_step": 860,
+      "source": "training_step"
+    },
+    {
+      "power_w": 360.516,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572406.1679046,
+      "global_step": 870,
+      "source": "training_step"
+    },
+    {
+      "power_w": 361.887,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572407.0173674,
+      "global_step": 880,
+      "source": "training_step"
+    },
+    {
+      "power_w": 375.462,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572407.883219,
+      "global_step": 890,
+      "source": "training_step"
+    },
+    {
+      "power_w": 374.841,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572408.7197444,
+      "global_step": 900,
+      "source": "training_step"
+    },
+    {
+      "power_w": 293.431,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572411.3598568,
+      "global_step": 910,
+      "source": "training_step"
+    },
+    {
+      "power_w": 349.096,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572412.1676028,
+      "global_step": 920,
+      "source": "training_step"
+    },
+    {
+      "power_w": 354.934,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572413.001639,
+      "global_step": 930,
+      "source": "training_step"
+    },
+    {
+      "power_w": 360.122,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572413.8510606,
+      "global_step": 940,
+      "source": "training_step"
+    },
+    {
+      "power_w": 370.919,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572414.6678865,
+      "global_step": 950,
+      "source": "training_step"
+    },
+    {
+      "power_w": 209.842,
+      "vram_used_mb": 11830.75,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572417.293626,
+      "global_step": 960,
+      "source": "training_step"
+    },
+    {
+      "power_w": 353.717,
+      "vram_used_mb": 11830.75,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572418.1371167,
+      "global_step": 970,
+      "source": "training_step"
+    },
+    {
+      "power_w": 371.008,
+      "vram_used_mb": 11830.75,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572418.9840157,
+      "global_step": 980,
+      "source": "training_step"
+    },
+    {
+      "power_w": 374.601,
+      "vram_used_mb": 11830.75,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572419.8006802,
+      "global_step": 990,
+      "source": "training_step"
+    },
+    {
+      "power_w": 352.05,
+      "vram_used_mb": 11830.75,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572420.6340063,
+      "global_step": 1000,
+      "source": "training_step"
+    },
+    {
+      "power_w": 215.186,
+      "vram_used_mb": 11829.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572423.2679577,
+      "global_step": 1010,
+      "source": "training_step"
+    },
+    {
+      "power_w": 357.011,
+      "vram_used_mb": 11829.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572424.0790784,
+      "global_step": 1020,
+      "source": "training_step"
+    },
+    {
+      "power_w": 370.798,
+      "vram_used_mb": 11829.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572424.9007566,
+      "global_step": 1030,
+      "source": "training_step"
+    },
+    {
+      "power_w": 376.794,
+      "vram_used_mb": 11829.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572425.7352858,
+      "global_step": 1040,
+      "source": "training_step"
+    },
+    {
+      "power_w": 367.578,
+      "vram_used_mb": 11829.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572426.6049402,
+      "global_step": 1050,
+      "source": "training_step"
+    },
+    {
+      "power_w": 192.216,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572429.283896,
+      "global_step": 1060,
+      "source": "training_step"
+    },
+    {
+      "power_w": 379.315,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572430.1348398,
+      "global_step": 1070,
+      "source": "training_step"
+    },
+    {
+      "power_w": 367.834,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572430.9687111,
+      "global_step": 1080,
+      "source": "training_step"
+    },
+    {
+      "power_w": 373.955,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572431.8000338,
+      "global_step": 1090,
+      "source": "training_step"
+    },
+    {
+      "power_w": 364.042,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572432.620917,
+      "global_step": 1100,
+      "source": "training_step"
+    },
+    {
+      "power_w": 214.654,
+      "vram_used_mb": 11830.75,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572435.279659,
+      "global_step": 1110,
+      "source": "training_step"
+    },
+    {
+      "power_w": 353.357,
+      "vram_used_mb": 11830.75,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572436.0998673,
+      "global_step": 1120,
+      "source": "training_step"
+    },
+    {
+      "power_w": 370.063,
+      "vram_used_mb": 11830.75,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572436.9357445,
+      "global_step": 1130,
+      "source": "training_step"
+    },
+    {
+      "power_w": 351.564,
+      "vram_used_mb": 11830.75,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572437.751323,
+      "global_step": 1140,
+      "source": "training_step"
+    },
+    {
+      "power_w": 356.323,
+      "vram_used_mb": 11830.75,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572438.5513086,
+      "global_step": 1150,
+      "source": "training_step"
+    },
+    {
+      "power_w": 225.757,
+      "vram_used_mb": 11831.0625,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572441.2337077,
+      "global_step": 1160,
+      "source": "training_step"
+    },
+    {
+      "power_w": 374.894,
+      "vram_used_mb": 11829.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572442.0517554,
+      "global_step": 1170,
+      "source": "training_step"
+    },
+    {
+      "power_w": 375.376,
+      "vram_used_mb": 11829.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572442.9116995,
+      "global_step": 1180,
+      "source": "training_step"
+    },
+    {
+      "power_w": 374.137,
+      "vram_used_mb": 11829.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572443.7177224,
+      "global_step": 1190,
+      "source": "training_step"
+    },
+    {
+      "power_w": 351.852,
+      "vram_used_mb": 11829.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572444.5347793,
+      "global_step": 1200,
+      "source": "training_step"
+    },
+    {
+      "power_w": 233.358,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572447.2001693,
+      "global_step": 1210,
+      "source": "training_step"
+    },
+    {
+      "power_w": 352.071,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572448.0013928,
+      "global_step": 1220,
+      "source": "training_step"
+    },
+    {
+      "power_w": 349.786,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572448.8172407,
+      "global_step": 1230,
+      "source": "training_step"
+    },
+    {
+      "power_w": 350.985,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572449.6185265,
+      "global_step": 1240,
+      "source": "training_step"
+    },
+    {
+      "power_w": 356.955,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572450.435465,
+      "global_step": 1250,
+      "source": "training_step"
+    },
+    {
+      "power_w": 237.735,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572453.1349783,
+      "global_step": 1260,
+      "source": "training_step"
+    },
+    {
+      "power_w": 364.808,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572453.9709728,
+      "global_step": 1270,
+      "source": "training_step"
+    },
+    {
+      "power_w": 378.018,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572454.8049517,
+      "global_step": 1280,
+      "source": "training_step"
+    },
+    {
+      "power_w": 364.06,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572455.63217,
+      "global_step": 1290,
+      "source": "training_step"
+    },
+    {
+      "power_w": 360.6,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572456.4727442,
+      "global_step": 1300,
+      "source": "training_step"
+    },
+    {
+      "power_w": 241.009,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572459.1223426,
+      "global_step": 1310,
+      "source": "training_step"
+    },
+    {
+      "power_w": 350.895,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572459.9399066,
+      "global_step": 1320,
+      "source": "training_step"
+    },
+    {
+      "power_w": 349.725,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572460.7558742,
+      "global_step": 1330,
+      "source": "training_step"
+    },
+    {
+      "power_w": 375.981,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572461.6389852,
+      "global_step": 1340,
+      "source": "training_step"
+    },
+    {
+      "power_w": 374.879,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572462.4722762,
+      "global_step": 1350,
+      "source": "training_step"
+    },
+    {
+      "power_w": 279.175,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572465.0057414,
+      "global_step": 1360,
+      "source": "training_step"
+    },
+    {
+      "power_w": 352.161,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572465.835005,
+      "global_step": 1370,
+      "source": "training_step"
+    },
+    {
+      "power_w": 363.749,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572466.6716685,
+      "global_step": 1380,
+      "source": "training_step"
+    },
+    {
+      "power_w": 384.861,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572467.537173,
+      "global_step": 1390,
+      "source": "training_step"
+    },
+    {
+      "power_w": 371.252,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572468.3554335,
+      "global_step": 1400,
+      "source": "training_step"
+    },
+    {
+      "power_w": 267.188,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572471.023796,
+      "global_step": 1410,
+      "source": "training_step"
+    },
+    {
+      "power_w": 339.985,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572471.82194,
+      "global_step": 1420,
+      "source": "training_step"
+    },
+    {
+      "power_w": 368.819,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572472.6726618,
+      "global_step": 1430,
+      "source": "training_step"
+    },
+    {
+      "power_w": 381.621,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572473.5225353,
+      "global_step": 1440,
+      "source": "training_step"
+    },
+    {
+      "power_w": 368.265,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572474.385328,
+      "global_step": 1450,
+      "source": "training_step"
+    },
+    {
+      "power_w": 245.84,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572477.0057487,
+      "global_step": 1460,
+      "source": "training_step"
+    },
+    {
+      "power_w": 355.189,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572477.8393884,
+      "global_step": 1470,
+      "source": "training_step"
+    },
+    {
+      "power_w": 363.407,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572478.6875722,
+      "global_step": 1480,
+      "source": "training_step"
+    },
+    {
+      "power_w": 393.389,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572479.539687,
+      "global_step": 1490,
+      "source": "training_step"
+    },
+    {
+      "power_w": 361.732,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572480.3883297,
+      "global_step": 1500,
+      "source": "training_step"
+    },
+    {
+      "power_w": 279.241,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572483.0384948,
+      "global_step": 1510,
+      "source": "training_step"
+    },
+    {
+      "power_w": 353.483,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572483.8616087,
+      "global_step": 1520,
+      "source": "training_step"
+    },
+    {
+      "power_w": 351.555,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572484.689266,
+      "global_step": 1530,
+      "source": "training_step"
+    },
+    {
+      "power_w": 349.464,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572485.5051425,
+      "global_step": 1540,
+      "source": "training_step"
+    },
+    {
+      "power_w": 350.44,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572486.3384354,
+      "global_step": 1550,
+      "source": "training_step"
+    },
+    {
+      "power_w": 282.018,
+      "vram_used_mb": 11830.75,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572489.022613,
+      "global_step": 1560,
+      "source": "training_step"
+    },
+    {
+      "power_w": 358.975,
+      "vram_used_mb": 11830.75,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572489.839305,
+      "global_step": 1570,
+      "source": "training_step"
+    },
+    {
+      "power_w": 354.223,
+      "vram_used_mb": 11830.75,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572490.6891725,
+      "global_step": 1580,
+      "source": "training_step"
+    },
+    {
+      "power_w": 359.888,
+      "vram_used_mb": 11830.75,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572491.4992754,
+      "global_step": 1590,
+      "source": "training_step"
+    },
+    {
+      "power_w": 368.444,
+      "vram_used_mb": 11830.75,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572492.322068,
+      "global_step": 1600,
+      "source": "training_step"
+    },
+    {
+      "power_w": 267.632,
+      "vram_used_mb": 11829.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572494.9505749,
+      "global_step": 1610,
+      "source": "training_step"
+    },
+    {
+      "power_w": 361.737,
+      "vram_used_mb": 11829.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572495.787133,
+      "global_step": 1620,
+      "source": "training_step"
+    },
+    {
+      "power_w": 358.103,
+      "vram_used_mb": 11829.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572496.605088,
+      "global_step": 1630,
+      "source": "training_step"
+    },
+    {
+      "power_w": 362.401,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572497.4550838,
+      "global_step": 1640,
+      "source": "training_step"
+    },
+    {
+      "power_w": 367.558,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572498.2885926,
+      "global_step": 1650,
+      "source": "training_step"
+    },
+    {
+      "power_w": 275.458,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572500.9234579,
+      "global_step": 1660,
+      "source": "training_step"
+    },
+    {
+      "power_w": 341.202,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572501.7708893,
+      "global_step": 1670,
+      "source": "training_step"
+    },
+    {
+      "power_w": 358.029,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572502.5558496,
+      "global_step": 1680,
+      "source": "training_step"
+    },
+    {
+      "power_w": 362.35,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572503.405401,
+      "global_step": 1690,
+      "source": "training_step"
+    },
+    {
+      "power_w": 361.728,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572504.2225413,
+      "global_step": 1700,
+      "source": "training_step"
+    },
+    {
+      "power_w": 179.575,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572506.8391416,
+      "global_step": 1710,
+      "source": "training_step"
+    },
+    {
+      "power_w": 373.773,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572507.6733508,
+      "global_step": 1720,
+      "source": "training_step"
+    },
+    {
+      "power_w": 360.79,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572508.5380266,
+      "global_step": 1730,
+      "source": "training_step"
+    },
+    {
+      "power_w": 372.376,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572509.3788643,
+      "global_step": 1740,
+      "source": "training_step"
+    },
+    {
+      "power_w": 362.286,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572510.2219,
+      "global_step": 1750,
+      "source": "training_step"
+    },
+    {
+      "power_w": 335.488,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572512.9492066,
+      "global_step": 1760,
+      "source": "training_step"
+    },
+    {
+      "power_w": 383.498,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572513.7901282,
+      "global_step": 1770,
+      "source": "training_step"
+    },
+    {
+      "power_w": 364.451,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572514.606046,
+      "global_step": 1780,
+      "source": "training_step"
+    },
+    {
+      "power_w": 358.218,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572515.4342632,
+      "global_step": 1790,
+      "source": "training_step"
+    },
+    {
+      "power_w": 370.621,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572516.2853446,
+      "global_step": 1800,
+      "source": "training_step"
+    },
+    {
+      "power_w": 307.221,
+      "vram_used_mb": 11830.875,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572518.921522,
+      "global_step": 1810,
+      "source": "training_step"
+    },
+    {
+      "power_w": 358.789,
+      "vram_used_mb": 11830.875,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572519.7346308,
+      "global_step": 1820,
+      "source": "training_step"
+    },
+    {
+      "power_w": 373.436,
+      "vram_used_mb": 11830.875,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572520.5843573,
+      "global_step": 1830,
+      "source": "training_step"
+    },
+    {
+      "power_w": 369.319,
+      "vram_used_mb": 11830.875,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572521.451328,
+      "global_step": 1840,
+      "source": "training_step"
+    },
+    {
+      "power_w": 377.639,
+      "vram_used_mb": 11830.875,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572522.3176663,
+      "global_step": 1850,
+      "source": "training_step"
+    },
+    {
+      "power_w": 201.909,
+      "vram_used_mb": 11829.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572524.834356,
+      "global_step": 1860,
+      "source": "training_step"
+    },
+    {
+      "power_w": 345.863,
+      "vram_used_mb": 11829.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572525.6689048,
+      "global_step": 1870,
+      "source": "training_step"
+    },
+    {
+      "power_w": 366.171,
+      "vram_used_mb": 11829.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572526.4854205,
+      "global_step": 1880,
+      "source": "training_step"
+    },
+    {
+      "power_w": 360.873,
+      "vram_used_mb": 11829.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572527.2855923,
+      "global_step": 1890,
+      "source": "training_step"
+    },
+    {
+      "power_w": 362.789,
+      "vram_used_mb": 11829.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572528.1189291,
+      "global_step": 1900,
+      "source": "training_step"
+    },
+    {
+      "power_w": 253.028,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572530.5844753,
+      "global_step": 1910,
+      "source": "training_step"
+    },
+    {
+      "power_w": 352.903,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572531.4088018,
+      "global_step": 1920,
+      "source": "training_step"
+    },
+    {
+      "power_w": 368.497,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572532.2349563,
+      "global_step": 1930,
+      "source": "training_step"
+    },
+    {
+      "power_w": 356.73,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572533.0347276,
+      "global_step": 1940,
+      "source": "training_step"
+    },
+    {
+      "power_w": 350.653,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572533.8674734,
+      "global_step": 1950,
+      "source": "training_step"
+    },
+    {
+      "power_w": 207.007,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572536.3516827,
+      "global_step": 1960,
+      "source": "training_step"
+    },
+    {
+      "power_w": 365.465,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572537.1839583,
+      "global_step": 1970,
+      "source": "training_step"
+    },
+    {
+      "power_w": 351.486,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572537.9867606,
+      "global_step": 1980,
+      "source": "training_step"
+    },
+    {
+      "power_w": 348.701,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572538.8017087,
+      "global_step": 1990,
+      "source": "training_step"
+    },
+    {
+      "power_w": 358.753,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572539.601267,
+      "global_step": 2000,
+      "source": "training_step"
+    },
+    {
+      "power_w": 256.883,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572542.1337383,
+      "global_step": 2010,
+      "source": "training_step"
+    },
+    {
+      "power_w": 353.833,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572542.9356444,
+      "global_step": 2020,
+      "source": "training_step"
+    },
+    {
+      "power_w": 357.342,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572543.7682621,
+      "global_step": 2030,
+      "source": "training_step"
+    },
+    {
+      "power_w": 377.661,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572544.6015344,
+      "global_step": 2040,
+      "source": "training_step"
+    },
+    {
+      "power_w": 373.315,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572545.4525466,
+      "global_step": 2050,
+      "source": "training_step"
+    },
+    {
+      "power_w": 289.754,
+      "vram_used_mb": 11830.875,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572547.933383,
+      "global_step": 2060,
+      "source": "training_step"
+    },
+    {
+      "power_w": 369.615,
+      "vram_used_mb": 11830.875,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572548.7514417,
+      "global_step": 2070,
+      "source": "training_step"
+    },
+    {
+      "power_w": 354.58,
+      "vram_used_mb": 11830.875,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572549.591895,
+      "global_step": 2080,
+      "source": "training_step"
+    },
+    {
+      "power_w": 348.005,
+      "vram_used_mb": 11830.875,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572550.3960786,
+      "global_step": 2090,
+      "source": "training_step"
+    },
+    {
+      "power_w": 358.017,
+      "vram_used_mb": 11830.875,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572551.2177546,
+      "global_step": 2100,
+      "source": "training_step"
+    }
+  ],
+  "checkpoint_samples": [
+    {
+      "power_w": 314.224,
+      "vram_used_mb": 10055.875,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572312.039695,
+      "global_step": 50,
+      "source": "checkpoint_save"
+    },
+    {
+      "power_w": 390.463,
+      "vram_used_mb": 10050.625,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572317.8065486,
+      "global_step": 100,
+      "source": "checkpoint_save"
+    },
+    {
+      "power_w": 321.411,
+      "vram_used_mb": 10050.625,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572323.5473433,
+      "global_step": 150,
+      "source": "checkpoint_save"
+    },
+    {
+      "power_w": 252.49,
+      "vram_used_mb": 10050.625,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572329.368092,
+      "global_step": 200,
+      "source": "checkpoint_save"
+    },
+    {
+      "power_w": 329.283,
+      "vram_used_mb": 10050.625,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572335.098398,
+      "global_step": 250,
+      "source": "checkpoint_save"
+    },
+    {
+      "power_w": 267.308,
+      "vram_used_mb": 11826.625,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572340.914126,
+      "global_step": 300,
+      "source": "checkpoint_save"
+    },
+    {
+      "power_w": 367.189,
+      "vram_used_mb": 11826.625,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572346.7019231,
+      "global_step": 350,
+      "source": "checkpoint_save"
+    },
+    {
+      "power_w": 295.286,
+      "vram_used_mb": 11826.3125,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572352.4476776,
+      "global_step": 400,
+      "source": "checkpoint_save"
+    },
+    {
+      "power_w": 375.297,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572358.300576,
+      "global_step": 450,
+      "source": "checkpoint_save"
+    },
+    {
+      "power_w": 304.764,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572364.0664828,
+      "global_step": 500,
+      "source": "checkpoint_save"
+    },
+    {
+      "power_w": 372.335,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572369.8256757,
+      "global_step": 550,
+      "source": "checkpoint_save"
+    },
+    {
+      "power_w": 301.19,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572375.5495727,
+      "global_step": 600,
+      "source": "checkpoint_save"
+    },
+    {
+      "power_w": 374.741,
+      "vram_used_mb": 11832.5,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572381.2889652,
+      "global_step": 650,
+      "source": "checkpoint_save"
+    },
+    {
+      "power_w": 276.366,
+      "vram_used_mb": 11829.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572387.0244758,
+      "global_step": 700,
+      "source": "checkpoint_save"
+    },
+    {
+      "power_w": 349.346,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572392.7133713,
+      "global_step": 750,
+      "source": "checkpoint_save"
+    },
+    {
+      "power_w": 263.596,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572398.5911057,
+      "global_step": 800,
+      "source": "checkpoint_save"
+    },
+    {
+      "power_w": 217.231,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572404.4792283,
+      "global_step": 850,
+      "source": "checkpoint_save"
+    },
+    {
+      "power_w": 241.06,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572410.545012,
+      "global_step": 900,
+      "source": "checkpoint_save"
+    },
+    {
+      "power_w": 230.323,
+      "vram_used_mb": 11830.75,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572416.4521954,
+      "global_step": 950,
+      "source": "checkpoint_save"
+    },
+    {
+      "power_w": 221.481,
+      "vram_used_mb": 11829.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572422.415444,
+      "global_step": 1000,
+      "source": "checkpoint_save"
+    },
+    {
+      "power_w": 209.544,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572428.4315555,
+      "global_step": 1050,
+      "source": "checkpoint_save"
+    },
+    {
+      "power_w": 214.947,
+      "vram_used_mb": 11830.75,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572434.4246757,
+      "global_step": 1100,
+      "source": "checkpoint_save"
+    },
+    {
+      "power_w": 200.731,
+      "vram_used_mb": 11831.0625,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572440.3752866,
+      "global_step": 1150,
+      "source": "checkpoint_save"
+    },
+    {
+      "power_w": 192.192,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572446.3658507,
+      "global_step": 1200,
+      "source": "checkpoint_save"
+    },
+    {
+      "power_w": 309.836,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572452.2889574,
+      "global_step": 1250,
+      "source": "checkpoint_save"
+    },
+    {
+      "power_w": 320.372,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572458.2949493,
+      "global_step": 1300,
+      "source": "checkpoint_save"
+    },
+    {
+      "power_w": 323.699,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572464.1651073,
+      "global_step": 1350,
+      "source": "checkpoint_save"
+    },
+    {
+      "power_w": 287.7,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572470.1904342,
+      "global_step": 1400,
+      "source": "checkpoint_save"
+    },
+    {
+      "power_w": 279.253,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572476.188791,
+      "global_step": 1450,
+      "source": "checkpoint_save"
+    },
+    {
+      "power_w": 281.19,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572482.1928797,
+      "global_step": 1500,
+      "source": "checkpoint_save"
+    },
+    {
+      "power_w": 281.707,
+      "vram_used_mb": 11830.75,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572488.1723871,
+      "global_step": 1550,
+      "source": "checkpoint_save"
+    },
+    {
+      "power_w": 275.902,
+      "vram_used_mb": 11829.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572494.1244886,
+      "global_step": 1600,
+      "source": "checkpoint_save"
+    },
+    {
+      "power_w": 249.25,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572500.112638,
+      "global_step": 1650,
+      "source": "checkpoint_save"
+    },
+    {
+      "power_w": 246.81,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572506.00588,
+      "global_step": 1700,
+      "source": "checkpoint_save"
+    },
+    {
+      "power_w": 248.771,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572512.0572221,
+      "global_step": 1750,
+      "source": "checkpoint_save"
+    },
+    {
+      "power_w": 251.142,
+      "vram_used_mb": 11830.875,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572518.0670593,
+      "global_step": 1800,
+      "source": "checkpoint_save"
+    },
+    {
+      "power_w": 275.459,
+      "vram_used_mb": 11829.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572524.011223,
+      "global_step": 1850,
+      "source": "checkpoint_save"
+    },
+    {
+      "power_w": 369.611,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572529.7497158,
+      "global_step": 1900,
+      "source": "checkpoint_save"
+    },
+    {
+      "power_w": 290.804,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572535.4987602,
+      "global_step": 1950,
+      "source": "checkpoint_save"
+    },
+    {
+      "power_w": 362.75,
+      "vram_used_mb": 11825.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572541.2480688,
+      "global_step": 2000,
+      "source": "checkpoint_save"
+    },
+    {
+      "power_w": 319.801,
+      "vram_used_mb": 11830.875,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572547.0884135,
+      "global_step": 2050,
+      "source": "checkpoint_save"
+    },
+    {
+      "power_w": 248.595,
+      "vram_used_mb": 11829.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572553.0221357,
+      "global_step": 2100,
+      "source": "checkpoint_save"
+    },
+    {
+      "power_w": 208.363,
+      "vram_used_mb": 11829.375,
+      "vram_total_mb": 32607.0,
+      "timestamp": 1789572554.1543627,
+      "global_step": 2105,
+      "source": "checkpoint_save"
+    }
+  ],
+  "summary": {
+    "training_duration_seconds": 248.09600615501404,
+    "continuous_sampling": {
+      "num_samples": 2469,
+      "sample_interval_ms": 100,
+      "avg_power_watts": 338.3224345889024,
+      "max_power_watts": 429.449,
+      "min_power_watts": 150.085,
+      "std_power_watts": 58.673386710816104,
+      "avg_vram_used_mb": 11588.834826852977,
+      "max_vram_used_mb": 11832.5,
+      "energy_wh": 23.309592973027602
+    },
+    "step_sampling": {
+      "num_samples": 210,
+      "sample_every_n_steps": 10,
+      "avg_power_watts": 335.90940952380953,
+      "max_power_watts": 393.389,
+      "min_power_watts": 179.575,
+      "avg_vram_used_mb": 11591.804464285715,
+      "max_vram_used_mb": 11832.5,
+      "energy_wh": 22.140297092894276
+    },
+    "checkpoint_sampling": {
+      "num_samples": 43,
+      "avg_power_watts": 286.36774418604654,
+      "avg_vram_used_mb": 11620.697674418605,
+      "note": "Captured during I/O (checkpoint saves), not during training compute"
+    },
+    "peak_allocator_mb": {
+      "avg": 6217.691996729651,
+      "max": 6716.16162109375
+    },
+    "estimated_energy_wh": 23.309592973027602,
+    "avg_power_watts": 338.3224345889024,
+    "energy_source": "continuous_sampling"
+  }
+}

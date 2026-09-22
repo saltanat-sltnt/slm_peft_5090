@@ -1,0 +1,9 @@
+pycache/
+*.pyc
+.venv/
+venv/
+.env
+.cache/
+checkpoints/
+*.safetensors
+*.bin
