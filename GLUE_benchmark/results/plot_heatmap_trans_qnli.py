@@ -18,23 +18,23 @@ FIGURES_DIR.mkdir(exist_ok=True)
 
 # ============================================================
 # Original paper values
-# Table IV — SST-2
+# Table IV — QNLI
 # ============================================================
 
 paper_data = [
     # Model, Method, Performance, Time_min, VRAM_MB, Power_W, Energy_Wh
 
-    ["TinyLlama-1.1B", "full_ft",  0.954, 34.01, 22850.4, 314.50, 178.27],
-    ["TinyLlama-1.1B", "lora",     0.959, 19.18, 16479.8, 261.43, 83.57],
-    ["TinyLlama-1.1B", "loraplus", 0.957, 19.33, 15957.0, 268.84, 86.61],
-    ["TinyLlama-1.1B", "qlora",    0.952, 31.05, 4225.2,  284.56, 147.26],
-    ["TinyLlama-1.1B", "bitfit",   0.920, 18.85, 17950.0, 288.41, 90.61],
+    ["TinyLlama-1.1B", "full_ft",  0.934, 109.33, 23200.1, 325.32, 592.79],
+    ["TinyLlama-1.1B", "lora",     0.924, 78.13,  16699.1, 280.30, 364.99],
+    ["TinyLlama-1.1B", "loraplus", 0.932, 81.46,  16728.6, 283.19, 384.49],
+    ["TinyLlama-1.1B", "qlora",    0.917, 124.59, 4797.4,  273.32, 567.55],
+    ["TinyLlama-1.1B", "bitfit",   0.839, 75.07,  19450.2, 308.12, 385.51],
 
-    ["Qwen3-1.7B", "full_ft",  0.955, 51.56, 22586.7, 338.59, 290.96],
-    ["Qwen3-1.7B", "lora",     0.955, 21.46, 23977.5, 360.31, 128.87],
-    ["Qwen3-1.7B", "loraplus", 0.962, 22.30, 20047.6, 350.26, 130.18],
-    ["Qwen3-1.7B", "qlora",    0.958, 34.17, 7808.1,  376.07, 214.17],
-    ["Qwen3-1.7B", "bitfit",   0.900, 22.27, 18683.6, 333.06, 123.62],
+    ["Qwen3-1.7B", "full_ft",  0.942, 170.30, 24089.7, 390.01, 1106.99],
+    ["Qwen3-1.7B", "lora",     0.943, 102.80, 23674.0, 395.16, 677.04],
+    ["Qwen3-1.7B", "loraplus", 0.946, 104.20, 23605.8, 391.14, 679.28],
+    ["Qwen3-1.7B", "qlora",    0.939, 159.40, 11114.3, 387.68, 1029.93],
+    ["Qwen3-1.7B", "bitfit",   0.859, 99.40,  23339.0, 388.94, 644.35],
 ]
 
 
@@ -66,9 +66,9 @@ if not CSV_PATH.exists():
 repro = pd.read_csv(CSV_PATH)
 
 
-# Keep only SST-2 + completed Transformer models
+# Keep only QNLI + completed Transformer models
 repro = repro[
-    (repro["Task"] == "SST-2")
+    (repro["Task"] == "QNLI")
     & (
         repro["Model"].isin(
             ["TinyLlama-1.1B", "Qwen3-1.7B"]
@@ -410,7 +410,7 @@ if (
 
 ax.set_title(
     "RTX 5090 Reproduction vs. Original RTX 4090 Results\n"
-    "SST-2 Fine-Tuning Percentage Difference",
+    "QNLI Fine-Tuning Percentage Difference",
     fontsize=13,
     pad=14,
 )
@@ -460,23 +460,12 @@ plt.tight_layout(
 
 png_path = (
     FIGURES_DIR
-    / "paper_vs_rtx5090_heatmap.png"
+    / "paper_vs_rtx5090_heatmap_trans_qnli.png"
 )
-
-pdf_path = (
-    FIGURES_DIR
-    / "paper_vs_rtx5090_heatmap.pdf"
-)
-
 
 plt.savefig(
     png_path,
     dpi=300,
-    bbox_inches="tight",
-)
-
-plt.savefig(
-    pdf_path,
     bbox_inches="tight",
 )
 
@@ -499,7 +488,6 @@ print("==========================================")
 
 print("\nSaved:")
 print(png_path)
-print(pdf_path)
 
 
 output_columns = [
