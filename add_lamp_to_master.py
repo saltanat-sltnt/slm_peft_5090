@@ -13,7 +13,7 @@ else:
     raise FileNotFoundError("Put this script in the repo root or inside GLUE_benchmark/LaMP_benchmark.")
 
 MASTER_CSV = ROOT / "GLUE_benchmark" / "results" / "master_results.csv"
-LAMP_OUTPUTS = ROOT / "LaMP_benchmark" / "outputs"
+LAMP_OUTPUTS = ROOT / "LaMP_benchmark" / "results"
 
 TASK_NAMES = {"lamp1":"LaMP-1","lamp2":"LaMP-2","lamp3":"LaMP-3","lamp4":"LaMP-4"}
 MODEL_NAMES = {
@@ -85,7 +85,7 @@ for req in ("Task","Model","Method"):
 rows = []
 seen = set()
 
-for p in sorted(LAMP_OUTPUTS.rglob("benchmark_results_*.json")):
+for p in sorted(LAMP_OUTPUTS.rglob("*.json")):
     low_parts = {x.lower() for x in p.parts}
     if "debug" in low_parts or "smoke" in low_parts:
         continue
