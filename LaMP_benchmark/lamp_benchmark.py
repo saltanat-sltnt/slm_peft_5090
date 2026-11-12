@@ -65,7 +65,6 @@ from transformers import (
     TrainerCallback,
     TrainingArguments,
     set_seed,
-    GenerationMixin
 )
 from transformers.modeling_outputs import CausalLMOutput
 from peft import LoraConfig, PeftModel, TaskType, get_peft_model, prepare_model_for_kbit_training
@@ -211,8 +210,8 @@ TASKS: Dict[str, TaskConfig] = {
                         "Personalized citation identification"),
     "lamp2": TaskConfig("lamp2", "dataset2", "classification", "accuracy",
                         "Personalized movie tagging"),
-    "lamp3": TaskConfig("lamp3", "dataset3", "regression", "rmse",
-                    "Personalized product rating (1-5)"),
+    "lamp3": TaskConfig("lamp3", "dataset3", "regression", "mae",
+                        "Personalized product rating (1-5)"),
     "lamp4": TaskConfig("lamp4", "dataset4", "generation", "rouge1",
                         "Personalized news headline generation"),
 }
@@ -384,7 +383,7 @@ def estimate_flops(
     """
     arch = spec.arch
     S, T = max_length, max_new_tokens
-    beams = num_beams
+    beams = num_beams if spec.kind == "seq2seq" else 1
     train_tokens = S + T if spec.kind == "seq2seq" else S
 
     if arch is not None and arch.family == "t5":
@@ -519,10 +518,10 @@ def netscore_performance(task: str, metrics: Dict[str, Any], cfg: NetScoreConfig
     if kind == "classification":
         return metrics.get("accuracy")
     if kind == "regression":
-        rmse = metrics.get("rmse")
-        if rmse is None or not math.isfinite(rmse):
+        mae = metrics.get("mae")
+        if mae is None or not math.isfinite(mae):
             return None
-        return 1.0 / (1.0 + rmse)
+        return max(0.0, 1.0 - mae / cfg.lamp3_max_error)
     return metrics.get("rouge1")
 
 
@@ -843,7 +842,7 @@ class Mamba2ConfigWrapper(PretrainedConfig):
         self.num_hidden_layers = getattr(self, "n_layer", 64)
 
 
-class Mamba2ForCausalLM(PreTrainedModel, GenerationMixin):
+class Mamba2ForCausalLM(PreTrainedModel):
     """Causal-LM wrapper around mamba_ssm's MambaLMHeadModel for Trainer/PEFT."""
     config_class = Mamba2ConfigWrapper
     base_model_prefix = "backbone"
@@ -871,9 +870,9 @@ class Mamba2ForCausalLM(PreTrainedModel, GenerationMixin):
     def set_input_embeddings(self, value):
         self.backbone.backbone.embedding = value
 
-    def generate(self, input_ids, max_new_tokens=128, **kwargs):
-        return super().generate(
-            input_ids=input_ids, max_new_tokens=max_new_tokens, **kwargs
+    def generate(self, input_ids, max_new_tokens=32, **kwargs):
+        return self.backbone.generate(
+            input_ids=input_ids, max_length=input_ids.shape[1] + max_new_tokens, **kwargs
         )
 
     def prepare_inputs_for_generation(self, input_ids, **kwargs):
@@ -1399,18 +1398,17 @@ def generate_predictions(model, tokenizer, data: List[Dict], task: str, model_ty
         if tracker:
             tracker.start_generation()
         if model_type == "mamba2":
-            outputs = model.generate(input_ids=inputs["input_ids"], max_new_tokens=opts.max_new_tokens,
-                num_beams=opts.num_beams, do_sample=False, pad_token_id=tokenizer.pad_token_id, eos_token_id=tokenizer.eos_token_id,)
+            outputs = model.generate(input_ids=inputs["input_ids"], max_new_tokens=opts.max_new_tokens)
         elif model_type == "mamba1":  # SSM: no attention_mask
             outputs = model.generate(input_ids=inputs["input_ids"], max_new_tokens=opts.max_new_tokens,
                                      do_sample=False, pad_token_id=tokenizer.pad_token_id,
-                                     eos_token_id=tokenizer.eos_token_id, num_beams=opts.num_beams,)
+                                     eos_token_id=tokenizer.eos_token_id)
         elif spec.kind == "seq2seq":
             outputs = model.generate(**inputs, max_new_tokens=opts.max_new_tokens, do_sample=False,
                                      num_beams=opts.num_beams)
         else:
             outputs = model.generate(**inputs, max_new_tokens=opts.max_new_tokens, do_sample=False,
-                                     pad_token_id=tokenizer.pad_token_id, eos_token_id=tokenizer.eos_token_id, num_beams=opts.num_beams,)
+                                     pad_token_id=tokenizer.pad_token_id, eos_token_id=tokenizer.eos_token_id)
         generated = outputs[0] if spec.kind == "seq2seq" else outputs[0][inputs["input_ids"].shape[1]:]
         if tracker:
             tracker.end_generation(num_new_tokens=len(generated))
@@ -1924,7 +1922,7 @@ def run_evaluation(opts, model_type: str, task: str, method: Optional[str], data
         "settings": {
             "max_length": opts.max_length,
             "max_new_tokens": opts.max_new_tokens,
-            "num_beams": opts.num_beams,
+            "num_beams": opts.num_beams if spec.kind == "seq2seq" else 1,
             "num_retrieved": opts.num_retrieved,
             "max_profile_size": opts.max_profile_size,
             "retrieval": retriever is not None,
@@ -2019,7 +2017,7 @@ def build_parser() -> argparse.ArgumentParser:
         g.add_argument("--no_retrieval", action="store_false", dest="use_retrieval",
                        help="Disable Contriever (use the first profile items)")
         g.add_argument("--max_length", type=int, default=512, help="Max sequence length / FLOPs S (default: 512)")
-        g.add_argument("--max_new_tokens", type=int, default=128, help="Generated tokens / FLOPs T (default: 32)")
+        g.add_argument("--max_new_tokens", type=int, default=32, help="Generated tokens / FLOPs T (default: 32)")
         g.add_argument("--num_beams", "--generation_num_beams", dest="num_beams", type=int, default=4,
                        help="Beam search width for flan-t5 (causal models use greedy) (default: 4)")
         g.add_argument("--max_samples", type=int, default=None, help="Limit validation samples")
