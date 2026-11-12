@@ -1,0 +1,73 @@
+{
+  "mode": "evaluate",
+  "task": "lamp1",
+  "task_description": "Personalized citation identification",
+  "method": "qlora",
+  "model_type": "tinyllama",
+  "model_name": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "model_path": ".\\outputs\\lamp1\\tinyllama\\qlora\\final_model",
+  "settings": {
+    "max_length": 512,
+    "max_new_tokens": 128,
+    "num_beams": 4,
+    "num_retrieved": 4,
+    "max_profile_size": 100,
+    "retrieval": true,
+    "precision": "bfloat16"
+  },
+  "metrics": {
+    "accuracy": 0.7396,
+    "f1": 0.7395906252625095,
+    "correct": 1849,
+    "total_samples": 2500,
+    "valid_predictions": 2500,
+    "unique_labels": [
+      "[1]",
+      "[2]"
+    ]
+  },
+  "primary_metric": "accuracy",
+  "primary_metric_value": 0.7396,
+  "netscore_performance": 0.7396,
+  "total_parameters": 620111872,
+  "adapted_parameters": 4505600,
+  "flops": {
+    "seq_len": 512,
+    "max_new_tokens": 128,
+    "num_beams": 4,
+    "forward_flops_per_sequence": 1106490949632.0,
+    "training_flops_per_sequence": 2226823102464.0,
+    "inference_flops_per_sequence": 1397877637120.0,
+    "source": "analytical"
+  },
+  "inference_stats": {
+    "num_samples": 2500,
+    "total_time_s": 3718.281,
+    "avg_time_per_sample_s": 1.4873,
+    "total_generation_time_s": 3247.818,
+    "avg_generation_time_per_sample_s": 1.2991,
+    "inference_latency_s": 1.2991,
+    "total_tokens_generated": 29344,
+    "throughput_tokens_per_s": 9.03,
+    "total_energy_j": 718089.324,
+    "total_energy_wh": 199.469257,
+    "avg_energy_per_sample_j": 287.2357,
+    "avg_power_w": 217.12,
+    "peak_vram_mb": 6165.25,
+    "avg_peak_vram_per_sample_mb": 6155.14
+  },
+  "NetScore_inference": {
+    "NS": 6.76765819611286,
+    "NS-E": 59.99227100514558,
+    "NS-M": 72.8107492614161,
+    "NS#": 58.043144167076264
+  },
+  "netscore_inputs_inference": {
+    "a": 73.96000000000001,
+    "p": 4.5056,
+    "m": 1397877.63712,
+    "v": 6.020751953125,
+    "t": 3718.281,
+    "w": 217.12
+  }
+}

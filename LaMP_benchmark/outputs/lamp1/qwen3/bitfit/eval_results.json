@@ -1,0 +1,73 @@
+{
+  "mode": "evaluate",
+  "task": "lamp1",
+  "task_description": "Personalized citation identification",
+  "method": "bitfit",
+  "model_type": "qwen3",
+  "model_name": "Qwen/Qwen3-1.7B",
+  "model_path": ".\\outputs\\lamp1\\qwen3\\bitfit\\final_model",
+  "settings": {
+    "max_length": 512,
+    "max_new_tokens": 128,
+    "num_beams": 4,
+    "num_retrieved": 4,
+    "max_profile_size": 100,
+    "retrieval": true,
+    "precision": "bfloat16"
+  },
+  "metrics": {
+    "accuracy": 0.4916,
+    "f1": 0.372048145965198,
+    "correct": 1229,
+    "total_samples": 2500,
+    "valid_predictions": 2482,
+    "unique_labels": [
+      "[1]",
+      "[2]"
+    ]
+  },
+  "primary_metric": "accuracy",
+  "primary_metric_value": 0.4916,
+  "netscore_performance": 0.4916,
+  "total_parameters": 1720574976,
+  "adapted_parameters": 123904,
+  "flops": {
+    "seq_len": 512,
+    "max_new_tokens": 128,
+    "num_beams": 4,
+    "forward_flops_per_sequence": 1821871439872.0,
+    "training_flops_per_sequence": 3643742879744.0,
+    "inference_flops_per_sequence": 2296129781760.0,
+    "source": "analytical"
+  },
+  "inference_stats": {
+    "num_samples": 2500,
+    "total_time_s": 7699.042,
+    "avg_time_per_sample_s": 3.0796,
+    "total_generation_time_s": 7228.447,
+    "avg_generation_time_per_sample_s": 2.8914,
+    "inference_latency_s": 2.8914,
+    "total_tokens_generated": 302970,
+    "throughput_tokens_per_s": 41.91,
+    "total_energy_j": 1557236.252,
+    "total_energy_wh": 432.565625,
+    "avg_energy_per_sample_j": 622.8945,
+    "avg_power_w": 202.17,
+    "peak_vram_mb": 8178.24,
+    "avg_peak_vram_per_sample_mb": 8053.02
+  },
+  "NetScore_inference": {
+    "NS": 13.123657383055622,
+    "NS-E": 52.18409146882536,
+    "NS-M": 65.40857523196647,
+    "NS#": 49.92819173221516
+  },
+  "netscore_inputs_inference": {
+    "a": 49.16,
+    "p": 0.123904,
+    "m": 2296129.78176,
+    "v": 7.9865625,
+    "t": 7699.042,
+    "w": 202.17
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "mode": "evaluate",
+  "task": "lamp2",
+  "task_description": "Personalized movie tagging",
+  "method": "bitfit",
+  "model_type": "tinyllama",
+  "model_name": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "model_path": ".\\outputs\\lamp2\\tinyllama\\bitfit\\final_model",
+  "settings": {
+    "max_length": 512,
+    "max_new_tokens": 128,
+    "num_beams": 4,
+    "num_retrieved": 4,
+    "max_profile_size": 100,
+    "retrieval": true,
+    "precision": "bfloat16"
+  },
+  "metrics": {
+    "accuracy": 0.09248554913294797,
+    "f1": 0.0804170030093214,
+    "correct": 64,
+    "total_samples": 692,
+    "valid_predictions": 633,
+    "unique_labels": [
+      "action",
+      "based on a book",
+      "classic",
+      "comedy",
+      "dark comedy",
+      "dystopia",
+      "fantasy",
+      "psychology",
+      "romance",
+      "sci-fi",
+      "social commentary",
+      "thought-provoking",
+      "true story",
+      "twist ending",
+      "violence"
+    ]
+  },
+  "primary_metric": "accuracy",
+  "primary_metric_value": 0.09248554913294797,
+  "netscore_performance": 0.09248554913294797,
+  "total_parameters": 1100048384,
+  "adapted_parameters": 92160,
+  "flops": {
+    "seq_len": 512,
+    "max_new_tokens": 128,
+    "num_beams": 4,
+    "forward_flops_per_sequence": 1106490949632.0,
+    "training_flops_per_sequence": 2212981899264.0,
+    "inference_flops_per_sequence": 1397877637120.0,
+    "source": "analytical"
+  },
+  "inference_stats": {
+    "num_samples": 692,
+    "total_time_s": 1055.929,
+    "avg_time_per_sample_s": 1.5259,
+    "total_generation_time_s": 1016.642,
+    "avg_generation_time_per_sample_s": 1.4691,
+    "inference_latency_s": 1.4691,
+    "total_tokens_generated": 58263,
+    "throughput_tokens_per_s": 57.31,
+    "total_energy_j": 209303.633,
+    "total_energy_wh": 58.139898,
+    "avg_energy_per_sample_j": 302.4619,
+    "avg_power_w": 198.34,
+    "peak_vram_mb": 6887.46,
+    "avg_peak_vram_per_sample_mb": 6771.26
+  },
+  "NetScore_inference": {
+    "NS": -12.457161051818764,
+    "NS-E": 25.340342615110593,
+    "NS-M": 36.57355734859942,
+    "NS#": 23.270944782624845
+  },
+  "netscore_inputs_inference": {
+    "a": 9.248554913294797,
+    "p": 0.09216,
+    "m": 1397877.63712,
+    "v": 6.72603515625,
+    "t": 1055.929,
+    "w": 198.34
+  }
+}
