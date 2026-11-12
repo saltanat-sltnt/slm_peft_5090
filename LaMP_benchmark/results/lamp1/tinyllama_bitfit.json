@@ -13,8 +13,8 @@
     "warmup_ratio": 0.05,
     "weight_decay": 0.01,
     "max_length": 512,
-    "max_new_tokens": 32,
-    "num_beams": 1,
+    "max_new_tokens": 128,
+    "num_beams": 4,
     "lora_r": null,
     "lora_alpha": null,
     "lora_dropout": null,
@@ -27,19 +27,19 @@
     "seed": 42
   },
   "metrics": {
-    "accuracy": 0.4656,
-    "f1": 0.4597792775442533,
-    "correct": 1164,
+    "accuracy": 0.474,
+    "f1": 0.4730080007891482,
+    "correct": 1185,
     "total_samples": 2500,
-    "valid_predictions": 2470,
+    "valid_predictions": 2467,
     "unique_labels": [
       "[1]",
       "[2]"
     ]
   },
   "primary_metric": "accuracy",
-  "primary_metric_value": 0.4656,
-  "netscore_performance": 0.4656,
+  "primary_metric_value": 0.474,
+  "netscore_performance": 0.474,
   "zero_shot_metrics": null,
   "zero_shot_netscore_performance": null,
   "performance_improvement": null,
@@ -71,21 +71,21 @@
   "energy_measurement_source": "continuous_sampling",
   "flops": {
     "seq_len": 512,
-    "max_new_tokens": 32,
-    "num_beams": 1,
+    "max_new_tokens": 128,
+    "num_beams": 4,
     "forward_flops_per_sequence": 1106490949632.0,
     "training_flops_per_sequence": 2212981899264.0,
     "inference_flops_per_sequence": 1178783973376.0,
     "source": "analytical"
   },
   "NetScore": {
-    "NS": 13.625315587895432,
-    "NS-E": 52.34801565757242,
-    "NS-M": 64.43883406431284,
-    "NS#": 50.06633085621197
+    "NS": 13.935930389185547,
+    "NS-E": 52.65863045886253,
+    "NS-M": 64.74944886560296,
+    "NS#": 50.376945657502084
   },
   "netscore_inputs": {
-    "a": 46.56,
+    "a": 47.4,
     "p": 0.09216,
     "m": 2212981.899264,
     "v": 8.178504943847656,

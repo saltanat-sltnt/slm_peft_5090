@@ -13,8 +13,8 @@
     "warmup_ratio": 0.05,
     "weight_decay": 0.01,
     "max_length": 512,
-    "max_new_tokens": 32,
-    "num_beams": 1,
+    "max_new_tokens": 128,
+    "num_beams": 4,
     "lora_r": null,
     "lora_alpha": null,
     "lora_dropout": null,
@@ -27,19 +27,19 @@
     "seed": 42
   },
   "metrics": {
-    "accuracy": 0.5112,
-    "f1": 0.48276893174852353,
-    "correct": 1278,
+    "accuracy": 0.4496,
+    "f1": 0.4643649744936906,
+    "correct": 1124,
     "total_samples": 2500,
-    "valid_predictions": 2499,
+    "valid_predictions": 2253,
     "unique_labels": [
       "[1]",
       "[2]"
     ]
   },
   "primary_metric": "accuracy",
-  "primary_metric_value": 0.5112,
-  "netscore_performance": 0.5112,
+  "primary_metric_value": 0.4496,
+  "netscore_performance": 0.4496,
   "zero_shot_metrics": null,
   "zero_shot_netscore_performance": null,
   "performance_improvement": null,
@@ -71,21 +71,21 @@
   "energy_measurement_source": "continuous_sampling",
   "flops": {
     "seq_len": 512,
-    "max_new_tokens": 32,
-    "num_beams": 1,
+    "max_new_tokens": 128,
+    "num_beams": 4,
     "forward_flops_per_sequence": 1415678263296.0,
     "training_flops_per_sequence": 2831356526592.0,
-    "inference_flops_per_sequence": 1504158154752.0,
+    "inference_flops_per_sequence": 1769597829120.0,
     "source": "analytical"
   },
   "NetScore": {
-    "NS": 7.877376400902794,
-    "NS-E": 53.264279230906226,
-    "NS-M": 65.72622906103872,
-    "NS#": 50.6468744859312
+    "NS": 5.646794697329227,
+    "NS-E": 51.033697527332656,
+    "NS-M": 63.49564735746516,
+    "NS#": 48.41629278235764
   },
   "netscore_inputs": {
-    "a": 51.12,
+    "a": 44.96,
     "p": 0.393216,
     "m": 2831356.526592,
     "v": 11.1419677734375,
@@ -94,32 +94,32 @@
   },
   "inference_stats": {
     "num_samples": 2500,
-    "total_time_s": 1696.397,
-    "avg_time_per_sample_s": 0.6786,
-    "total_generation_time_s": 1270.392,
-    "avg_generation_time_per_sample_s": 0.5082,
-    "inference_latency_s": 0.5082,
-    "total_tokens_generated": 77862,
-    "throughput_tokens_per_s": 61.29,
-    "total_energy_j": 391685.857,
-    "total_energy_wh": 108.801627,
-    "avg_energy_per_sample_j": 156.6743,
-    "avg_power_w": 230.56,
-    "peak_vram_mb": 5065.56,
-    "avg_peak_vram_per_sample_mb": 5046.57
+    "total_time_s": 5362.229,
+    "avg_time_per_sample_s": 2.1449,
+    "total_generation_time_s": 4930.727,
+    "avg_generation_time_per_sample_s": 1.9723,
+    "inference_latency_s": 1.9723,
+    "total_tokens_generated": 304821,
+    "throughput_tokens_per_s": 61.82,
+    "total_energy_j": 953282.449,
+    "total_energy_wh": 264.80068,
+    "avg_energy_per_sample_j": 381.313,
+    "avg_power_w": 177.95,
+    "peak_vram_mb": 5601.38,
+    "avg_peak_vram_per_sample_mb": 5332.23
   },
   "NetScore_inference": {
-    "NS": 10.624386970319115,
-    "NS-E": 54.36285515794259,
-    "NS-M": 66.60781503809802,
-    "NS#": 52.62703639002686
+    "NS": 7.687994523888477,
+    "NS-E": 51.16394372890162,
+    "NS-M": 64.26806440306368,
+    "NS#": 49.31895602952512
   },
   "netscore_inputs_inference": {
-    "a": 51.12,
+    "a": 44.96,
     "p": 0.393216,
-    "m": 1504158.154752,
-    "v": 4.9468359375,
-    "t": 1696.397,
-    "w": 230.56
+    "m": 1769597.82912,
+    "v": 5.47009765625,
+    "t": 5362.229,
+    "w": 177.95
   }
 }

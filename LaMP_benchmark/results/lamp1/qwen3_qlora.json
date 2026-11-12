@@ -13,8 +13,8 @@
     "warmup_ratio": 0.05,
     "weight_decay": 0.01,
     "max_length": 512,
-    "max_new_tokens": 32,
-    "num_beams": 1,
+    "max_new_tokens": 128,
+    "num_beams": 4,
     "lora_r": 16,
     "lora_alpha": 32,
     "lora_dropout": 0.1,
@@ -28,7 +28,7 @@
   },
   "metrics": {
     "accuracy": 0.7516,
-    "f1": 0.7515121744629423,
+    "f1": 0.7514708045830545,
     "correct": 1879,
     "total_samples": 2500,
     "valid_predictions": 2500,
@@ -71,11 +71,11 @@
   "energy_measurement_source": "continuous_sampling",
   "flops": {
     "seq_len": 512,
-    "max_new_tokens": 32,
-    "num_beams": 1,
+    "max_new_tokens": 128,
+    "num_beams": 4,
     "forward_flops_per_sequence": 1821871439872.0,
     "training_flops_per_sequence": 3663472885760.0,
-    "inference_flops_per_sequence": 1939731382272.0,
+    "inference_flops_per_sequence": 2296129781760.0,
     "source": "analytical"
   },
   "NetScore": {
@@ -94,32 +94,32 @@
   },
   "inference_stats": {
     "num_samples": 2500,
-    "total_time_s": 913.239,
-    "avg_time_per_sample_s": 0.3653,
-    "total_generation_time_s": 435.571,
-    "avg_generation_time_per_sample_s": 0.1742,
-    "inference_latency_s": 0.1742,
+    "total_time_s": 1707.92,
+    "avg_time_per_sample_s": 0.6832,
+    "total_generation_time_s": 1234.603,
+    "avg_generation_time_per_sample_s": 0.4938,
+    "inference_latency_s": 0.4938,
     "total_tokens_generated": 10000,
-    "throughput_tokens_per_s": 22.96,
-    "total_energy_j": 282456.805,
-    "total_energy_wh": 78.460224,
-    "avg_energy_per_sample_j": 112.9827,
-    "avg_power_w": 309.12,
-    "peak_vram_mb": 7101.79,
-    "avg_peak_vram_per_sample_mb": 7087.13
+    "throughput_tokens_per_s": 8.1,
+    "total_energy_j": 427500.255,
+    "total_energy_wh": 118.750071,
+    "avg_energy_per_sample_j": 171.0001,
+    "avg_power_w": 250.7,
+    "peak_vram_mb": 8150.67,
+    "avg_peak_vram_per_sample_mb": 8137.67
   },
   "NetScore_inference": {
-    "NS": 4.084994872377559,
-    "NS-E": 61.41269197074806,
-    "NS-M": 72.93680118358063,
-    "NS#": 59.310022297189164
+    "NS": 3.352446478019173,
+    "NS-E": 60.96041621170731,
+    "NS-M": 72.78723747371637,
+    "NS#": 58.708182828284166
   },
   "netscore_inputs_inference": {
     "a": 75.16000000000001,
     "p": 6.422528,
-    "m": 1939731.382272,
-    "v": 6.935341796875,
-    "t": 913.239,
-    "w": 309.12
+    "m": 2296129.78176,
+    "v": 7.959638671875,
+    "t": 1707.92,
+    "w": 250.7
   }
 }
