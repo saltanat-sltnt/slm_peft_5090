@@ -210,7 +210,7 @@ TASKS: Dict[str, TaskConfig] = {
                         "Personalized citation identification"),
     "lamp2": TaskConfig("lamp2", "dataset2", "classification", "accuracy",
                         "Personalized movie tagging"),
-    "lamp3": TaskConfig("lamp3", "dataset3", "regression", "mae",
+    "lamp3": TaskConfig("lamp3", "dataset3", "regression", "rmse",
                         "Personalized product rating (1-5)"),
     "lamp4": TaskConfig("lamp4", "dataset4", "generation", "rouge1",
                         "Personalized news headline generation"),
@@ -247,7 +247,7 @@ class NetScoreConfig:
     time_s_unit: float = 1.0          # t in seconds
     power_w_unit: float = 1.0         # w in Watts
     # LaMP-3 is scored by MAE on a 1-5 scale; NetScore performance = 1 - MAE / max_error
-    lamp3_max_error: float = 4.0
+    # lamp3_max_error: float = 4.0
 
 
 NETSCORE = NetScoreConfig()
@@ -383,7 +383,7 @@ def estimate_flops(
     """
     arch = spec.arch
     S, T = max_length, max_new_tokens
-    beams = num_beams if spec.kind == "seq2seq" else 1
+    beams = num_beams
     train_tokens = S + T if spec.kind == "seq2seq" else S
 
     if arch is not None and arch.family == "t5":
@@ -391,7 +391,11 @@ def estimate_flops(
         fwd_train, fwd_inf, source = enc + dec, enc + beams * dec, "analytical"
     elif arch is not None:
         fwd_train = _causal_forward_flops(arch, S)
-        fwd_inf = _causal_forward_flops(arch, S + T)
+        # Prompt is processed once; generated-token cost is multiplied by beam width
+        prompt_flops = _causal_forward_flops(arch, S)
+        full_flops = _causal_forward_flops(arch, S + T)
+        generation_flops = full_flops - prompt_flops
+        fwd_inf = prompt_flops + beams * generation_flops
         source = "analytical"
     elif total_params:
         fwd_train = 2.0 * total_params * train_tokens
@@ -512,16 +516,16 @@ def netscore_performance(task: str, metrics: Dict[str, Any], cfg: NetScoreConfig
     """
     Map task metrics to the NetScore performance term in [0, 1] (higher is better).
 
-    lamp1/lamp2: accuracy; lamp3: 1 - MAE / 4 (clipped at 0); lamp4: ROUGE-1.
+    lamp1/lamp2: accuracy; lamp3: 1 / (1 + RMSE); lamp4: ROUGE-1.
     """
     kind = TASKS[task].kind
     if kind == "classification":
         return metrics.get("accuracy")
     if kind == "regression":
-        mae = metrics.get("mae")
-        if mae is None or not math.isfinite(mae):
+        rmse = metrics.get("rmse")
+        if rmse is None or not math.isfinite(rmse):
             return None
-        return max(0.0, 1.0 - mae / cfg.lamp3_max_error)
+        return 1.0 / ( 1.0 + rmse)
     return metrics.get("rouge1")
 
 
@@ -1398,16 +1402,17 @@ def generate_predictions(model, tokenizer, data: List[Dict], task: str, model_ty
         if tracker:
             tracker.start_generation()
         if model_type == "mamba2":
-            outputs = model.generate(input_ids=inputs["input_ids"], max_new_tokens=opts.max_new_tokens)
+            outputs = model.generate(input_ids=inputs["input_ids"], max_new_tokens=opts.max_new_tokens, 
+                                     num_beams=opts.num_beams, do_sample=False, pad_token_id=tokenizer.pad_token_id, eos_token_id=tokenizer.eos_token_id,)
         elif model_type == "mamba1":  # SSM: no attention_mask
             outputs = model.generate(input_ids=inputs["input_ids"], max_new_tokens=opts.max_new_tokens,
-                                     do_sample=False, pad_token_id=tokenizer.pad_token_id,
+                                     num_beams=opts.num_beams, do_sample=False, pad_token_id=tokenizer.pad_token_id,
                                      eos_token_id=tokenizer.eos_token_id)
         elif spec.kind == "seq2seq":
             outputs = model.generate(**inputs, max_new_tokens=opts.max_new_tokens, do_sample=False,
                                      num_beams=opts.num_beams)
         else:
-            outputs = model.generate(**inputs, max_new_tokens=opts.max_new_tokens, do_sample=False,
+            outputs = model.generate(**inputs, max_new_tokens=opts.max_new_tokens, num_beams=opts.num_beams, do_sample=False,
                                      pad_token_id=tokenizer.pad_token_id, eos_token_id=tokenizer.eos_token_id)
         generated = outputs[0] if spec.kind == "seq2seq" else outputs[0][inputs["input_ids"].shape[1]:]
         if tracker:
@@ -1782,7 +1787,7 @@ def run_training(opts, model_type: str, task: str, method: str, data_dir: str, r
             "weight_decay": opts.weight_decay,
             "max_length": opts.max_length,
             "max_new_tokens": opts.max_new_tokens,
-            "num_beams": opts.num_beams if spec.kind == "seq2seq" else 1,
+            "num_beams": opts.num_beams,
             "lora_r": opts.lora_r if method in LORA_METHODS else None,
             "lora_alpha": opts.lora_alpha if method in LORA_METHODS else None,
             "lora_dropout": opts.lora_dropout if method in LORA_METHODS else None,
@@ -1922,7 +1927,7 @@ def run_evaluation(opts, model_type: str, task: str, method: Optional[str], data
         "settings": {
             "max_length": opts.max_length,
             "max_new_tokens": opts.max_new_tokens,
-            "num_beams": opts.num_beams if spec.kind == "seq2seq" else 1,
+            "num_beams": opts.num_beams,
             "num_retrieved": opts.num_retrieved,
             "max_profile_size": opts.max_profile_size,
             "retrieval": retriever is not None,
@@ -2017,9 +2022,9 @@ def build_parser() -> argparse.ArgumentParser:
         g.add_argument("--no_retrieval", action="store_false", dest="use_retrieval",
                        help="Disable Contriever (use the first profile items)")
         g.add_argument("--max_length", type=int, default=512, help="Max sequence length / FLOPs S (default: 512)")
-        g.add_argument("--max_new_tokens", type=int, default=32, help="Generated tokens / FLOPs T (default: 32)")
+        g.add_argument("--max_new_tokens", type=int, default=128, help="Generated tokens / FLOPs T (default: 128)")
         g.add_argument("--num_beams", "--generation_num_beams", dest="num_beams", type=int, default=4,
-                       help="Beam search width for flan-t5 (causal models use greedy) (default: 4)")
+                       help="Beam search width (default: 4)")
         g.add_argument("--max_samples", type=int, default=None, help="Limit validation samples")
 
         g = p.add_argument_group("hardware / precision")
